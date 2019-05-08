@@ -12,7 +12,17 @@ General plan of attack:
 
 - How do they do MethodNaming in code2vec?
 
+Environment Setup:
+
 virtualenv -p /usr/bin/python3.5 env
 pip install --upgrade pip
 pip install --upgrade tensorflow-gpu
 pip install requests
+
+Downloaded pretrained model and followed test instructions in the github repo:
+
+Evaluation time: 0h8m55s
+Accuracy: 0.34982242333988006
+Precision: 0.6403375976062626, recall: 0.5502367358306642, F1: 0.5918778183625023
+
+Got an OOM, cut batch size to 256 from 512
